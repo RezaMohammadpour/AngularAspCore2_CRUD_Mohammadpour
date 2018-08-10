@@ -14,4 +14,11 @@ In this project I answerd all necesseries in Angular in Asp.net Core 2.1 and res
 
 4-Your database named 'DBMohammadpourAngular' has been created in Sqlserver.
 
-5-Run Application and Enjoy it.
+5-Open Solution explorer > Right click > Properties > Debug > Click Copy button after ssl website address
+
+6-Open Folder ClientApp > src > app > DBMohammadpour  and open file tblEmployee.ts
+
+7-Paste your website address in below code ( remove 'https://localhost:44354' and paste your ssl website address. pay attention ,don't remove '/api/' part)
+   public ROOT_URL: string = "https://localhost:44354/api/";
+
+6-Run Application and Enjoy it.
