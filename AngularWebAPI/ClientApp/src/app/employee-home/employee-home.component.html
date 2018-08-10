@@ -1,0 +1,60 @@
+
+
+
+<div class="container">
+  <h3>Mohammdpour Angular Asp.Net Core</h3>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <td>  &nbsp; </td>
+        <td>  &nbsp;  </td>
+        <td>  &nbsp;  </td>
+        <td>  &nbsp;  </td>
+        <td>  <a (click)="Insert()">Add New</a></td>
+      </tr>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Family</th>
+        <th>Email</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="warning" *ngFor="let item of employeelist ">
+        <td> {{item.id}}</td>
+        <td>{{item.firstname}}</td>
+        <td>{{item.lastname}}</td>
+        <td>{{item.email}}</td>
+        <td><a (click)="Edit(item)">Edit</a></td>
+        <td><a (click)="Delete(item)">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<form #regForm="ngForm">
+  <div class="container" *ngIf="editCustomer">
+    <h3>{{FormHeader}}</h3>
+    <table class="table table-condensed">
+      <tbody>
+        <tr>
+          <td>First Name</td>
+          <td><input type="text" name="firstname" [(ngModel)]='firstname'></td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td><input type="text" name="lastname" [(ngModel)]='lastname'></td>
+        </tr>
+        <tr>
+          <td> Email</td>
+          <td><input type="text" name="email" [(ngModel)]='email'></td>
+        </tr>
+        <tr>
+          <td><input type="hidden" name="id" [(ngModel)]='id'></td>
+          <td><input type="button" value="Save" (click)="Save(regForm)"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
