@@ -1,6 +1,6 @@
 I'm Dr.Reza Mohammadpour, Professional Software Architect and Senior Developer.
 
-In this project I answerd all necesseries in Angular in Asp.net Core 2.1 and resolved all issues.
+In this project I answered all necesseries in Angular in Asp.net Core 2.1 and resolved all issues.
 
 #To Run this project:
 
